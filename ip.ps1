@@ -1,7 +1,7 @@
 $IPV4 = Test-Connection -ComputerName (hostname) -Count 1  | Select -ExpandProperty IPV4Address
 
 
-("# "+$IPV4.IPAddressToString) > D:\get_my_ip\README.md
+$IPV4.IPAddressToString > D:\get_my_ip\README.md
 
 ipconfig > D:\get_my_ip\ip.txt
 cd D:\get_my_ip\
